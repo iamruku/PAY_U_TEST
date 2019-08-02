@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<link href="./index.css" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+		/>
+		<script type="text/javascript" src="index.js"></script>
+
+		<title>Pay-U Test</title>
+	</head>
+	<body>
+		<div class="cls-existing-cards" id="id-existing-cards">
+			<!-- <div class="cls-card">
+				<div class="cls-card-edit"><i class="fa fa-pencil"></i>Edit</div>
+				<div class="cls-card-number">1234-5678-9009-8765-4321</div>
+				<div class="cls-card-expiry">
+					<span>Valid Thru&nbsp;</span><span>02/2012</span>
+				</div>
+				<div class="cls-card-icon"><i class="fa fa-cc-visa"></i></div>
+			</div> -->
+		</div>
+		<button type="button" class="cls-create-card" id="id-create-card">
+			Use New Card
+		</button>
+		<form class="cls-create-card-form" id="id-create-card-form" action="#">
+			<input
+				type="number"
+				class="cls-full-input"
+				placeholder="Enter Card Number"
+				id="id-number"
+			/>
+			<div class="cls-error" id="id-number-error"></div>
+			<select class="cls-inline-input" placeholder="Exp Month" id="id-month">
+				<option value="">Exp. Month</option>
+				<option value="1">1</option>
+				<option value="1">2</option>
+				<option value="1">3</option>
+				<option value="1">4</option>
+				<option value="1">5</option>
+				<option value="1">6</option>
+				<option value="1">7</option>
+				<option value="1">8</option>
+				<option value="1">9</option>
+				<option value="1">10</option>
+				<option value="1">11</option>
+				<option value="1">12</option>
+			</select>
+			<div class="cls-error-inline" id="id-month-error"></div>
+			<select class="cls-inline-input" placeholder="Exp Month" id="id-year">
+				<option value="">Exp. Year</option>
+				<option value="1">2019</option>
+				<option value="1">2020</option>
+				<option value="1">2021</option>
+				<option value="1">2022</option>
+				<option value="1">2023</option>
+				<option value="1">2024</option>
+				<option value="1">2025</option>
+			</select>
+			<div class="cls-error" id="id-year-error"></div>
+			<input
+				type="password"
+				maxlength="3"
+				class="cls-inline-input"
+				placeholder="Enter CVV"
+				id="id-cvv"
+			/>
+			<div class="cls-error-inline" id="id-cvv-error"></div>
+			<button
+				type="submit"
+				class="cls-create-card cls-inform"
+				id="id-create-card"
+			>
+				Create New
+			</button>
+			<div class="cls-error" id="id-cvv-error"></div>
+		</form>
+	</body>
+</html>

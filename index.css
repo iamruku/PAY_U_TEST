@@ -1,0 +1,124 @@
+html, body {
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 16px;
+    font-family: 'Roboto', '"Helvetica Neue"', 'Arial', 'sans-serif';
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.cls-card {
+    position: relative;
+    height: 200px;
+    width: 400px;
+    background: #a8ff78;
+    background: #00B4DB;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 8px;
+    margin: 32px;
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.cls-card-edit {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    outline: none !important;
+    cursor: pointer;
+}
+
+.cls-card-number {
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+.cls-card-expiry {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.cls-card-icon {
+    position: absolute;
+    font-size: 32px;
+    bottom: 0;
+    right: 8px;
+}
+
+.cls-create-card {
+    width: 400px;
+    height: auto;
+    padding: 16px;
+    background: #ccc;
+    color: #fff;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cls-create-card-form {
+    margin: 32px;
+    border: 1px solid #ccc;
+    padding: 32px;
+    width: 400px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.cls-full-input {
+    display: block;
+    border: 1px solid #ccc;
+    padding: 16px;
+    box-sizing: border-box;
+    margin: 16px 0;
+    width: 100%;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.cls-inline-input {
+    border: 1px solid #ccc;
+    padding: 16px;
+    box-sizing: border-box;
+    margin: 16px 2px;
+    width: 33.33%;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.cls-error {
+    display: block;
+    color: #ff0000;
+    width: 100%;
+    font-size: 12px;
+}
+
+.cls-error-inline {
+    color: #ff0000;
+    width: 33.33%;
+    font-size: 12px;
+}
+
+.cls-inform {
+    max-width: 100% !important;
+}
